@@ -92,13 +92,8 @@ enum mgr_intr {
 
 enum frm_cfg {
 	FRM_ACTIVE	= 1,
-#ifdef CONFIG_SLIMBUS_BOOST
-	CLK_GEAR	= 10,
-	ROOT_FREQ	= 31,
-#else
-    CLK_GEAR	= 7,
-    ROOT_FREQ	= 11,
-#endif
+	CLK_GEAR	= 7,
+	ROOT_FREQ	= 11,
 	REF_CLK_GEAR	= 15,
 	INTR_WAKE	= 19,
 };
